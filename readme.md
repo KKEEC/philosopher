@@ -4,8 +4,8 @@
 "."  refers to file
 
 ./philo
-   /utils    \\ utility functions
-      atoi.c checkargs.c validatears
-   .philo.h     
-   .main.c 
+   /srcs    \\ utility functions
+      .main.c  atoi.c checkargs.c validatears
+   /inc 
+      .philo.h     
    .Makefile
