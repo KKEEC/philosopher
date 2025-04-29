@@ -1,0 +1,12 @@
+{
+    "name": "C Dev Environment",
+    "image": "gcc",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "ms-vscode.cpptools",
+      "ms-vscode.cmake-tools"
+    ],
+    "postCreateCommand": "apt-get update && apt-get install -y make gdb"
+  }
