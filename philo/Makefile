@@ -1,11 +1,14 @@
 CC = cc
+
 CFLAGS = -Wall -Wextra -Werror
 
 LDFLAGS = -lpthread
 
 NAME = philo
 
-SRCS = main.c
+SRCDIR = ./srcs
+
+SRCS = $(wildcard $(SRCDIR)/*.c)
 
 OBJS = $(SRCS:.c=.o)
 
