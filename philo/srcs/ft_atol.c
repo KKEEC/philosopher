@@ -1,26 +1,18 @@
 #include "../includes/philo.h"
 
-/* static int  ft_strlen(char *str)
-{
-    int i;
-
-    i = 0;
-    while (str[i])
-        i++;
-    return (i);
-} */
-
 long    ft_atol(char *str)
 {
-    (void)str;
-    int result;
+    long result;
     int i;
 
+    if (!str)
+        return (0);
     result = 0;
     i = 0;
-    if (str[i] == '+')
+    while (str[i] >= '0' && str[i] <= '9')
+    {
+        result = result * 10 + str[i] - '0';
         i++;
-    if (str[i] == '-')
-        return (-1);
-    return (i);
+    }
+    return (result);
 }
