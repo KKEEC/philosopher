@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "threads.h": "c",
+        "thread-shared-types.h": "c"
+    }
+}
